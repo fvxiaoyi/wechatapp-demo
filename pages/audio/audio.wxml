@@ -1,0 +1,19 @@
+<!--pages/audio/audio.wxml-->
+<text>pages/audio/audio.wxml</text>
+<view class='audio-play-wrap' wx:if="{{tempFile}}">
+  <view class='audio-play'>
+    <view class='audio-icon'>></view>
+    <text bindtap='play' class="play-desc">点击播放录音</text>
+    <text class='time'>{{tempFile.time}}'</text>
+    <icon bindtap='clear' type="clear" color="#DCDFE6" ></icon>
+  </view>
+</view>
+<view class='audio-wrap'>
+  <view class='audio-button-wrap'>
+    <view class='audio-button' bindtap='doAudio'></view>
+    <text wx:if="{{startAudio}}" class='desc'>点击结束录音</text>
+    <text wx:else class='desc'>点击开始录音</text>
+    <text class='time'>{{time}}'/60'</text>
+  </view>
+</view>
+<button bindtap='testMutilsUpload'>upload</button>

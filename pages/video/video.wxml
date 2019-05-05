@@ -1,0 +1,5 @@
+<!--pages/video/video.wxml-->
+<text>pages/video/video.wxml</text>
+<video wx:if="{{tempFilePath!=null}}" class="video" src="{{tempFilePath}}"></video>
+<button bindtap='chooseVideo'>choose</button>
+<button bindtap='upload'>upload</button>

@@ -1,0 +1,6 @@
+/* pages/video/video.wxss */
+.video {
+  margin: 50px auto;
+  width: 100%;
+  height: 300px;
+}
